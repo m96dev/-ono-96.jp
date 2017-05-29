@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+
+@font-face {
+  font-family: 'YuGothL';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://mono-96.jp/ishida/mono96/fonts/YuGothL.woff) format('woff');
+}
+
+html, body { 
+	height: 100%; 
+	font-family: "游ゴシック体","Yu Gothic","YuGothL","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
+	font-weight: 400;
+}
+
+@media screen and (min-width: 770px){
+
+    .mono96_re {
+		width: 1000px;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+	.re_head {
+		margin-bottom: 30px;
+	}
+	.re_sentence {
+		margin-bottom: 30px;
+	}
+    .mono96_re p {
+		line-height: 1.8;
+	}
+	.mono96_re h1 {
+		width: 135px;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-family: "Titillium Web", "Abel";
+        border-bottom: 3px solid #000;
+        padding-bottom: 7px;
+	}
+	.mono96_re h2{
+		font-size: 20px;
+		line-height: 2;
+        font-weight: bold;
+		border-bottom: solid 1px #cccccc;
+		margin-bottom: 30px;
+	}
+	.re_01 {
+		font-size: 17px;
+		border-bottom: 1px solid #E3E3E3;
+        margin-bottom: 10px;
+	}
+	.re_02 {
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+	.re_02 span {
+		font-size: 12px;
+	}
+	.mono96_re h3{
+		font-size: 17px;
+		line-height: 2;
+        font-weight: bold;
+		border-bottom: solid 1px #E3E3E3;
+		margin-bottom: 30px;
+	}
+	}
+
+@media screen and (max-width: 769px){
+	.mono96_re {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+	.mono96_re h1 {
+		font-size: 24px;
+	    font-weight: bold;
+	    margin: 0 auto 8%;
+	    text-align: center;
+	    font-family: "Titillium Web", "Abel";
+	    border-bottom: 2px solid #000;
+        padding-bottom: 2%;
+        width: 36%;
+	}
+	.re_head {
+		margin-bottom: 30px;
+	}
+	.re_sentence {
+		margin-bottom: 30px;
+	}
+    .mono96_re p {
+		line-height: 1.8;
+		margin: 3%;
+	}
+	.mono96_re h2{
+		font-size: 20px;
+		line-height: 2;
+        font-weight: bold;
+		border-bottom: solid 1px #cccccc;
+		margin:10% 3% 0;
+	}
+	.re_01 {
+		font-size: 17px;
+		border-bottom: 1px solid #E3E3E3;
+        margin-bottom: 10px;
+	}
+	.re_02 {
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+	.re_02 span {
+		font-size: 12px;
+	}
+	.mono96_re h3{
+		font-size: 17px;
+		line-height: 2;
+        font-weight: bold;
+		border-bottom: solid 1px #E3E3E3;
+		margin:10% 3% 0;
+	}
+}

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* smartphone only */
+@media only screen and (max-width: 767px) {
+
+  /*==================
+  bootstrap custom
+  ===================*/
+  body{
+    padding-right: 10px; padding-left: 10px;
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top{
+    margin-right: -10px; margin-left: -10px;
+  }
+  .window-fix{
+    margin-left: -10px !important; margin-right: -10px !important;
+    padding-left: 10px !important; padding-right: 10px !important;
+  }
+
+  /* フッター */
+  #page-footer{margin-left:-10px; margin-right:-10px;}
+
+  /* フォーム */
+  .form-horizontal .control-label{padding-left:0;}
+  .form-horizontal .control-label .label-important{float:none;}
+  .form-horizontal .control-label .label-ttl{display:inline; margin-left:0;}
+  .form-horizontal .controls select{margin-bottom: 10px;}
+  .span12 .top-input{margin-bottom:10px;}/*姓の入力欄*/
+
+  /* ログイン */
+  .login-area-box{width:100%;}
+  .login-area-box .login-area-subbox{height:auto;}
+  .login-area-box .login-area-subbox .control-label{padding-left:0;}
+
+  /* マイページ */
+  .mypage-menu{margin-left:0;}
+  .mypage-menu .mypage-menu-select{width:49%; margin-left:0; margin-bottom:2%;}
+  .mypage-menu .mypage-menu-select:nth-child(2n){margin-left:2%;}
+  .mypage-menu .mypage-menu-select .btn{display:none;}
+  .mypage-menu .menu-text-block .menu-explain br{display:none;}
+
+  /* マイページ フォーム */
+  .form-edit-style{border-bottom:solid 1px #dddddd;}
+  .form-edit-style .control-group{border-top:solid 1px #dddddd; padding-top:10px; margin-bottom:10px;}
+
+  /* お気に入り テーブル */
+  .fav-list-table .fav-item-part{width:100%;}
+
+  /* フロー */
+  .action-steps{font-size:10px; display:table; table-layout: fixed; width:100%;}
+  .action-steps li.flow-ttl{display:table-cell;}
+  .action-steps li{float:none; display:table-cell; vertical-align:middle; padding:5px 2px; line-height:14px; border-right:solid 1px #fff;}
+
+  /* ボタン */
+  .btn-row{margin-right:0;}
+  .btn-under{margin-top:0;}
+  .form-actions{text-align:center;}
+  .form-actions .btn{float:none; width:100%; padding:8px 0; margin-top:15px;}
+  .form-actions > .btn:first-child{margin-top:0;}
+
+  /* リスト 商品テキスト部 */
+  .list-item-text{min-height:100px;}
+
+  /* リスト変形 一列配置数 */
+  #wrapper ul[class*="liquid-column"] > li{float:left; height:auto; margin-left:0; clear:none;}
+  #wrapper ul.liquid-column2 > li{width:49%; margin-left:2%;}
+  #wrapper ul.liquid-column2 > li:nth-child(2n-1){margin-left:0; clear: both;}
+  #wrapper ul.liquid-column3 > li{width:32%; margin-left:2%;}
+  #wrapper ul.liquid-column3 > li:nth-child(3n-2){margin-left:0; clear: both;}
+  #wrapper ul.liquid-column4 > li{width:25%;}
+  #wrapper ul.liquid-column4 > li:nth-child(4n-3){clear: both;}
+  #wrapper ul.liquid-column5 > li{width:20%;}
+  #wrapper ul.liquid-column5 > li:nth-child(5n-4){clear: both;}
+  #wrapper ul.liquid-column6 > li{width:16.6666%;}
+  #wrapper ul.liquid-column6 > li:nth-child(6n-5){clear: both;}
+
+  /* テーブル変形 */
+  table.liquid-table{border:0;}
+  table.liquid-table > thead{display:none;}/***thが上にある場合***/
+  table.liquid-table > tbody > tr > th,
+  table.liquid-table > tbody > tr > td{width:100%; float:left; padding:0 0 5px; border:none;}/***thが横にある場合***/
+  table.liquid-table > tbody > tr > th{text-align:left;}
+
+  table.liquid-table{border-bottom:solid 1px #dddddd;}
+  table.liquid-table > tbody > tr > td:first-child,
+  table.liquid-table > tbody > tr > th:first-child{padding-top:10px; border-top:solid 1px #dddddd !important;}
+  table.liquid-table > tbody > tr > td:last-child,
+  table.liquid-table > tbody > tr > th:last-child{padding-bottom:10px;}
+
+  /***商品情報用テーブル***/
+  table.liquid-table > tbody > tr > td.itemprice-part,
+  table.liquid-table > tbody > tr > td.quantity-part,
+  table.liquid-table > tbody > tr > td.total-itemprice-part{text-align:left;}
+  table.liquid-table > tbody > tr > td.itemprice-part .visible-phone,
+  table.liquid-table > tbody > tr > td.quantity-part .visible-phone,
+  table.liquid-table > tbody > tr > td.total-itemprice-part .visible-phone{float:left;}
+
+  /***カートインデックス用***/
+  table.liquid-table.cart-index > tbody > tr > td.quantity-part{padding-top:5px;}
+  table.liquid-table.cart-index > tbody > tr > td.quantity-part span{padding-top:6px;}
+  table.liquid-table.cart-index > tbody > tr > td.quantity-part div{display:inline;}
+  table.liquid-table.cart-index > tbody > tr > td.quantity-part select{display:inline; width:50%; margin-bottom:0;}
+  table.liquid-table.cart-index > tbody > tr > td.quantity-part input{float:right;}
+  table.liquid-table.cart-index > tbody > tr > td.total-itemprice-part{padding-top:10px; margin-top:10px; border-top:dotted 1px #dddddd; font-weight:bold;}
+  table.liquid-table.cart-index > tbody > tr > td.total-itemprice-part form{float:right;}
+
+  /*** 確認画面 合計金額テーブル ***/
+  table.confirm-price-box{width:auto;}
+  table.confirm-price-box td{width:40%;}
+
+  /*カート*/
+  #coupon_code, #coupon_code_up{display:inline; width:60%;}
+  .docs-input-sizes #month, .docs-input-sizes #ValidityYear{width:40%;}
+
+  /*カート ポイント入力部*/
+  .point-form .use-point-form span{display:block; margin:0 0 3px;}
+  .point-form .use-point-form .btn{margin-top:10px; width:48%;}
+  .point-form .use-point-form .btn.btn-primary{margin-right:2%;}
+
+  /*複数配送*/
+  table td.giftwrapping-part{text-align:left;}
+  #optional_services .noshi_prev{float:none; text-align:center; margin:0 0 10px;}
+  #optional_services .preview-image-box{float:none; width:auto; margin-bottom:10px;}
+
+.noshi_preview_main .messagesError,
+.noshi_preview_block .messagesError{
+	padding-top:50px;
+}
+
+}
+
+/* smartphone to tablet */
+@media only screen and (max-width: 979px) {
+
+  /*==================
+  header layout
+  ===================*/
+  /*横スライドメニュー*/
+  body.option-menu-slide{position:relative; right:0; transition: all 0.2s ease-in 0s;}
+  body.option-menu-slide.menu-open{right:270px;}
+  body.option-menu-slide .nav-collapse.collapse{position:fixed; top:0; right:-270px; width:270px; height:100%; background-color:#f8f8f8; z-index:999999; overflow-y:scroll;-webkit-overflow-scrolling: touch; transition: all 0.2s ease-in 0s;}
+  body.option-menu-slide.menu-open .nav-collapse.collapse{right:0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
+
+  /*ログイン後のユーザー名*/
+  .login-username .name-body{display:block; width:100px; float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; text-align:right;}
+
+  /* スマホ用ヘッダーメニュー */
+  .search-wrap li{float:none;}
+
+  /*パンくず*/
+  .breadcrumb{margin-bottom:10px;}
+
+  /* フォーム 姓の入力欄 */
+  .top-input{margin-bottom:10px;}
+
+  /* 郵便番号検索ボタン */
+  .post-search-btn{width:100%; margin-top:10px; margin-bottom: 10px;}
+
+  /* 規約系サイドナビ */
+  .affix, .affix-bottom{position:static; top:auto; bottom:auto;}
+
+  /*商品詳細 再入荷のお知らせ*/
+  .rearrival-mail-form .table th,
+  .rearrival-mail-form .table td{display:block; width:100%; padding: 0;}
+  .rearrival-mail-form .table tbody tr{padding: 5px 10px 5px; display: block;}
+  .rearrival-mail-form .rearrival_txt{display: inline-block; margin:0;}
+
+  /*商品詳細 ボタン*/
+  .select_quantity_default .color,
+  .select_quantity_default .color-blank{width:20%;}
+  .select_quantity_default .salse-status{width:40%;}
+  .select_quantity_default .select-quantity,
+  .select_quantity_default .select-blank{width:30%; margin-right:0;}
+  .item_submit_btn_block{display:block; width:auto; text-align:center; margin-top:10px;}
+
+}
+
+/* tablet only*/
+@media only screen and (min-width:768px) and (max-width: 979px) {
+
+}

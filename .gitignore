@@ -1,0 +1,18 @@
+# WHITE LIST: for html web usmono096.jp all file ignore
+/*
+
+# add white list ,folder & files
+!/.gitignore
+
+!/index.html
+
+!/css
+!/js
+
+!/images
+/images/amazon
+
+# font
+!/ishida/mono96/fonts/YuGothL.woff
+
+

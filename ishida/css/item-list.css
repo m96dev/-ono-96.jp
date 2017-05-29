@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/******************************
+商品一覧
+******************************/
+.list-item-text{
+  padding:5px 0 10px;
+  min-height:100px;
+}
+/*レイアウト*/
+#list-success-area .span10{
+  border-top:solid 2px #000;
+  padding-top:20px;
+}
+/*ソート*/
+.sort{
+  border-top: solid 2px #000;
+  padding-top: 20px;
+}
+.sort table {
+  margin:0 auto 0 0;
+}
+.sort table td{
+  padding-left:20px;
+}
+.sort table .offRate{
+  padding-left:0;
+}
+.sort table label {
+  display:inline;
+  margin-bottom:0;
+  margin-right:8px;
+}
+
+/*カラバリ*/
+.product-color-set {
+  display:none;
+  position:absolute;
+  top:0;
+  left:auto;
+  right:-60px;
+  z-index:0;
+  height:auto;
+  background-color:#FFFFFF;
+  border:solid 1px #ccc;
+  border-bottom:0;
+}
+  .product-color-tip {
+    list-style: none;
+    float:left;
+    position:static;
+    top:auto;
+    left:auto;
+  }
+  .product-color-tip > li{
+    border-bottom:solid 1px #ccc;
+  }
+.product-color-set[class*='max-colset']{
+  width:auto;
+}
+  .product-color-set[class*='max-colset'] ul{
+    display:none;
+  }
+  .product-color-set[class*='max-colset'] ul.colset1{
+    display:block;
+  }
+
+.product-color-tip > li{
+  width:60px;
+}
+
+
+
+/*common item class for list*/
+.product{
+  position:relative;
+}
+.item-price {
+    font-family: "Interstate_Regular","Fjalla One",arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+.list-item-text .item-ttl a{
+  color: #000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rank-num{
+  color:#fff;
+  display:inline-block;
+  position: absolute;
+  top: 0;
+  text-align:center;
+  z-index:10;
+}
+/*label*/
+.list-item-text .icon{
+  margin-bottom:3px;
+}
+.list-item-text .icon .label-rearrival,
+.list-item-text .icon .label-new{
+  width:40px;
+  display:block;
+  padding:0;
+  vertical-align:middle;
+  text-align:center;
+  font-size:12px;
+  position:absolute;
+  padding:14px 0;
+  top:0;
+}
+.label.label-sale {
+  background-color: #eb6100;
+}
+.label.label-new{
+  background-color:#c31835;
+}
+.label.label-rearrival {
+  background-color: #008bcc;
+}
+.label.label-soldout {
+  background-color: #000;
+}
+/*viewSuccess-label */
+#item-name .label{
+  font-size:12px;
+  line-height:24px;
+  vertical-align:middle;
+  padding:0 5px;
+  min-width:46px;
+  text-align:center;
+}
+#item-name .label br{
+  display:none;
+}
+
+
+
+
+/*five-col-slider*/
+.five-col-slider {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+	width:1200px;
+}
+.five-col-slider .slides ._hover img{
+  width:100%;
+}
+.five-col-slider .slides li{
+  width:216px;
+  padding:0 12px;
+}
+.five-col-slider h2{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  background: #676767;
+  color:#fff;
+  margin-bottom: 15px;
+  line-height:44px;
+  padding-right:1.6%;
+}
+.five-col-slider h2 a{
+  float: right;
+  padding-right: 10px;
+  background: url(../images/icn_arrow_right.png) center right no-repeat;
+}
+.five-col-slider  h2 span{
+  color: #fff;
+  font-size: 12px;
+  margin-left: 10px;
+  vertical-align:middle;
+}
+.five-col-slider h2 span.torasition{
+  font-size:20px;
+}
+.five-col-slider h2 img{
+  margin-right:8px;
+}
+.five-col-slider .flex-direction-nav .flex-prev,.five-col-slider .flexslider:hover .flex-prev{
+  height: 70px;
+  top: 150px;}
+.five-col-slider .flex-direction-nav .flex-next,.five-col-slider .flexslider:hover .flex-next{
+    height: 70px;
+    top: 150px;}
+/*four-col-slider*/
+.four-col-slider{
+  margin-bottom: 70px;
+}
+.four-col-slider .slides ._hover img{
+  width:100%;
+}
+.four-col-slider .slides li{
+  width:216px;
+  padding:0 12px;
+}
+.four-col-slider h2{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  background: #676767;
+  color:#fff;
+  margin-bottom: 15px;
+  line-height:44px;
+  padding-right:1.6%;
+}
+.four-col-slider h2 a{
+  float: right;
+  padding-right: 10px;
+  background: url(../images/icn_arrow_right.png) center right no-repeat;
+}
+.four-col-slider  h2 span{
+  color: #fff;
+  font-size: 12px;
+  margin-left: 18px;
+  vertical-align:middle;
+}
+.four-col-slider h2 span.torasition{
+  font-size:20px;
+}
+.four-col-slider h2 img{
+  margin-right:8px;
+}
+.four-col-slider .flex-direction-nav .flex-prev,.four-col-slider .flexslider:hover .flex-prev{
+  top:33%;
+  left:-36px;
+}
+.four-col-slider .flex-direction-nav .flex-next,.four-col-slider .flexslider:hover .flex-next{
+  top:33%;
+  right:-36px;
+}
+/*for IE8*/
+.four-col-slider .flex-direction-nav .flex-prev, .four-col-slider .flexslider:hover .flex-prev{left:0\9;}
+.four-col-slider .flex-direction-nav .flex-next, .four-col-slider .flexslider:hover .flex-next{right:0\9;}
+
+
+/******************************
+ランキング
+******************************/
+#ranking-items .rank-num{
+  position:absolute;
+  top:0;
+  left:0;
+  font-size:14px;
+  line-height:20px;
+  width:30px;
+  text-align:center;
+  padding:5px 0;
+  text-shadow:none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  z-index:10;
+}
+#ranking-items .rank1 .rank-num{
+  background-color:#000000;
+}
+
+/******************************
+最近チェックした商品
+******************************/
+/* recently-recommend-items */
+#recently-recommend-items{
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: dotted 1px #000000;
+  margin-bottom: 40px;
+}
+#recently-recommend-items h2{
+  padding: 10px 20px 10px 0px;
+  margin-bottom: 15px;
+}
+#recently-recommend-items h2 span{
+  color: #000;
+  font-size: 12px;
+}
+#recently-recommend-items .container{
+  margin: 0 auto 15px;
+  padding-right: 0;
+}
+#recently-recommend-items .slides li{
+  width:129px;
+  margin-right:24px;
+}
+#recently-recommend-items .torasition{
+  font-size:20px;
+}
+/******************************
+NEW ARRIVAL系
+******************************/
+.look-more{
+  float:right;
+}
+
+

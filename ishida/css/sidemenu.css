@@ -1,0 +1,126 @@
+#sideContent {
+	float: left;
+	margin-top: 15px;
+	width: 282px;
+}
+
+#sideContent  li {
+	font-size: 120%;
+	line-height: 30px;
+}
+#sideContent li span{
+	color: #c80027;
+}
+
+#sideContent .menu-title {
+	border-bottom-style: none;
+	margin-bottom: 10px;
+}
+
+#sideContent .nomal {
+	margin-left: 17px;
+}
+
+#sideContent a {
+	text-decoration: none;
+	color: black;
+}
+
+#sideContent .red {
+	color:#c41230;
+}
+
+#sideContent .blue {
+	color:#3765a3;
+}
+
+
+#sideContent .red a {
+	color:#c41230;
+}
+
+#sideContent .blue a {
+	color:#3765a3;
+}
+
+
+#sideContent a:hover {
+	color: #c80027;
+	border-bottom-color: #c80027;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+#sideContent .red a:hover {
+	color: #c41230;
+	border-bottom-color: #c41230;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+#sideContent .blue a:hover {
+	color: #3765a3;
+	border-bottom-color: #3765a3;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+
+#sideContent ul {
+	padding-bottom: 5px;
+	border-bottom-color: #7f7f7f;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+#sideContent .category {
+	background-position: right 11px;
+	background-repeat: no-repeat;
+	background-image: url(../images/sidenav/icn_close.gif);
+	margin-left: 17px;
+	cursor:pointer;
+}
+#sideContent div.open{
+	background-image: url(../images/sidenav/icn_open.gif);
+}
+#sideContent .menu {
+	border-bottom-style: none;
+}
+#sideContent .menu li {
+	margin-top: 2px;
+	background-color: #f2f2f2;
+	width: 282px;
+	font-size: 12px;
+	text-indent: 20px;
+}
+#side-banner {
+	width: 196px;
+}
+#side-banner ul {
+	border-bottom-style: none;
+}
+#side-banner li {
+	margin-top: 15px;
+}
+#side-banner a:hover {
+	border-bottom-style: none;
+}
+.img_501{
+	margin-bottom: 10px;
+}
+
+
+
+/* 2/19
+------------------------------------------------------------------------------------  */
+
+#sideContent .menu li .menu2 {
+	background-color: white;
+	border-bottom-style: none;
+}
+#sideContent .menu li .menu2 li {
+	margin: 1px 0;
+	background-color: white;
+	width: 196px;
+	font-size: 12px;
+	text-indent: 25px;
+}

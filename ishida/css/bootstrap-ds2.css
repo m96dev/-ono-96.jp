@@ -1,0 +1,599 @@
+@charset "UTF-8";
+
+/*==================
+commmon setting
+===================*/
+body{
+  font-size:12px;
+font-family:'Interstate_Regular','Fjalla One',arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,sans-serif;
+  padding-bottom: 0 !important;
+}
+.clearfix:after{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+.clearfix{zoom: 100%;}
+.red{color: #cc0000;}
+
+figure{margin: 0; padding: 0;}
+
+/*==================
+bootstrap custom
+===================*/
+h1, h2, h3, h4, h5, h6{font-weight:normal; margin:0;}
+h1, h2, h3{line-height:20px;}
+h1{font-size:16px;}
+h2{font-size:14px;}
+h3{font-size:12px;}
+form,ul,ol{margin: 0;}
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {width: 960px;}
+.label{font-weight: normal; text-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.btn{-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+
+/*navigation*/
+.dropdown-menu {border: 0; margin-top:0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.navbar .nav > li > .dropdown-menu:before{border: 0; top: 0;}
+
+/*botton*/
+.form-actions .btn-primary{float:right;}
+
+.lead {font-size: 12px; font-weight: normal; line-height: 20px;}
+.breadcrumb{background-color:transparent; padding:8px 0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.breadcrumb > li{display: inline;}
+
+/*==================
+head layout
+===================*/
+#page-header .point{float:right; margin:0 8px 0 0;}
+#head-bar{padding:4px 0;}
+#head-bar:after{clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+#head-bar .utility-nav{float:right;}
+.head-search li{float:left; list-style:none;}
+
+/*==================
+footer layout
+===================*/
+#pagetop-area{clear:both; text-align: right; margin-top: 30px;}
+#pagetop{cursor: pointer;}
+
+/*==================
+form layout
+===================*/
+/*labelの左揃え*/
+.form-horizontal .control-label{text-align: left;}
+.form-horizontal .control-label .label-ttl{font-weight:bold;}
+
+/*注記*/
+.help-block{margin-top:10px;}
+
+/*生年月日*/
+.docs-input-sizes select{width:20%; margin-left:2%;}
+.docs-input-sizes select:first-child{margin-left:0;}
+
+/*==================
+list layout
+===================*/
+.listSetting > li{position:relative; z-index:0;}
+.listSetting > li.first-child{clear:both; margin-left:0;}
+
+/*アイコン*/
+.label-new{background-color:#cc0000;}
+.label-rearrival{background-color:#0099ff;}
+.label-soldout{background-color:#cccccc;}
+.label-sale{background-color:#ff9900;}
+.label-magazine{background-color:#66aa00;}
+
+/*ソート*/
+.sort select{width:auto; margin-bottom:0;}
+
+/*ページャー*/
+.pages{margin:20px 0; overflow:hidden;}
+.pagination{margin:0;}
+.pagination ul{display:block;}
+
+/*カテゴリーメイン画像*/
+.list-category-visual{margin-bottom:20px;}
+
+/*========================================
+view layout
+=========================================*/
+#item-name{float:right; margin-bottom:30px;}
+#item-image{float:left; margin-left:0;}
+#item-detail{float: right; padding-top:10px; margin-left: 0; border-top: 1px solid #ddd;}
+
+/*商品画像
+-------------------------*/
+/*PC用メイン画像*/
+#item-image #main-item{ position: relative; margin-bottom:10px;}
+#item-image #main-item #mainPhoto{ display: block; margin-bottom: 15px; border: 1px solid #ddd; cursor:pointer;}
+
+/*ズームアイコン*/
+#item-image #main-item .item-icn-zoom{bottom: 1px; margin: 0; position: absolute; right: -1px; z-index: 10;}
+
+/*タッチデバイス用メイン画像*/
+#view-slider{margin-bottom: 15px;}
+#view-slider .slides img{max-width: 100%; margin:0 auto;}
+
+/*商品選択
+-------------------------*/
+.select_quantity_default{
+  margin-bottom: 10px; padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.select_quantity_default .color,
+.select_quantity_default .color-blank{
+  display: inline-block; /display: inline; /zoom: 1; vertical-align: top;
+  width: 10%;
+  margin:5px 15px 0 0;
+}
+.select_quantity_default .salse-status{
+  display:inline-block; /display: inline; /zoom: 1; vertical-align: top;
+  width: 28.62985%;
+  margin:5px 0 0;
+}
+.select_quantity_default .select-quantity,
+.select_quantity_default .select-blank{
+  display:inline-block; /display: inline; /zoom: 1; vertical-align: top;
+  width: 10%;
+  margin-right: 15px; margin-bottom: 0;
+}
+.select_quantity_default select.ds2_select_gift{
+  width:auto;
+}
+.item_submit_btn_block{
+  display:inline-block; /display: inline; /zoom: 1; vertical-align: top;
+  width: 40%;
+}
+.item_submit_btn_block #btn_cart{margin-right: 10px;}
+
+/*数量 for IE7*/
+*:first-child+html .select_quantity_default select{width: 75px;}
+*:first-child+html .select_quantity_default .select-blank{width: 75px;}
+
+/*SNSボタン
+-------------------------*/
+#sns-block{padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #ddd;}
+#sns-blockIn{float: left;}
+#sns-block iframe{vertical-align: top;}
+
+/*PCとメールアイコン*/
+#sns-block ul{float: left;}
+#sns-block ul,#sns-block li{list-style: none;}
+#sns-block li{width: 16px; height: 18px; text-indent: -9999px; cursor: pointer;}
+#sns-block #print-item{float: left; background: url(../images/ico_print.png) no-repeat 0 0;}
+#sns-block #mail-item{float: right; background: url(../images/ico_mail.png) no-repeat 0 0;}
+#mail-item a{display: block; width: 16px; height: 18px;}
+
+/*商品サムネイル
+-------------------------*/
+.photo_thumbs_block .thumbnail-title{margin-bottom:5px;}
+.photo_thumbs_block ul li{float: left; margin-right: 5px; margin-bottom: 10px; width: 50px;}
+.photo_thumbs_block ul li img{border: 1px solid #ddd;}
+
+/*再入荷お知らせメールフォーム*/
+.rearrival-mail-form{border:3px solid #dddddd; margin-bottom: 20px; padding:10px;}
+.rearrival-mail-form .table{margin:0;}
+.rearrival-mail-form .table th,
+.rearrival-mail-form .table td{border-top:none; vertical-align:middle;}
+.rearrival-mail-form .table th{width:25%;}
+.rearrival-mail-form .btn_regist_rearrival_mail{font-size:11px;}
+.rearrival-mail-form .rearrival_txt{margin:0 0 0 10px;}
+
+/*==================
+slider
+===================*/
+body .flexslider{border:0; border-radius:0; box-shadow:none; background:none;}
+body .flexslider p{margin-bottom:0;}
+body .flexslider .slides img{width:auto;}
+#grandtop-main .flexslider{margin-bottom:20px;}
+
+/*==================
+login
+==================*/
+.login-area-box .login-area-subbox .control-label{width:120px;}
+.login-area-subbox .controls{margin-left:120px;}
+*+html .login-area-box .login-area-subbox .controls{margin-left:0;}/* IE7用 */
+.login-area-box .form-actions{text-align:center;}
+.login-area-box .form-actions .btn-primary{float:none;}
+
+/*==================
+flow
+===================*/
+.action-steps{list-style-position:inside; overflow:hidden;}
+.action-steps li{float:left; background-color:#f5f5f5; text-align:center;}
+
+/* step2～6 */
+.action-steps.step2 li{width:48%; margin-right:4%;}
+.action-steps.step3 li{width:32%; margin-right:2%;}
+.action-steps.step4 li{width:24%; margin-right:1.33%;}
+.action-steps.step5 li{width:19%; margin-right:1.25%;}
+.action-steps.step6 li{width:16%; margin-right:0.8%;}
+/* step2～6 end */
+
+.action-steps li.flow-ttl{display:block;}
+.action-steps li.active{color:#ffffff; background-color:#000000;}
+.action-steps li.last{margin-right:0;}
+
+/*==================
+side navi
+==================*/
+.list-category .toggle-btn{cursor:pointer; display:block; position:absolute; top:0; right:0; width:30px; height:100%; background:url("../images/toggle_on.gif") no-repeat 50% 50%;}
+.list-category .toggle-btn.select{background:url("../images/toggle_off.gif") no-repeat 50% 50%;}
+
+/*==================
+mypage
+==================*/
+/*トップページ*/
+.mypage-menu{margin-left:-2%;}
+.mypage-menu .mypage-menu-select{float:left; width:23%; margin-left:2%; margin-bottom:2%;}
+.mypage-menu .mypage-menu-select .btn{display:block; padding:10px 0;}
+.mypage-menu .mypage-menu-select .btn i{margin-left:10px;}
+.mypage-menu .menu-text-block{height:127px; text-align:center; border:solid 1px #dddddd; cursor:pointer;}
+.mypage-menu .menu-text-block:hover{background-color:#f8f8f8; transition: all 0.3s ease 0s;}
+.mypage-menu .menu-text-block .menu-title{width:80%; margin:0 auto 10px; padding:10px 0; border-bottom:solid 1px #dddddd;}
+.mypage-menu .menu-text-block i{margin-bottom:5px; margin-right:5px;}
+.mypage-menu .menu-text-block .menu-title img { margin-right:5px;}
+.mypage-menu .menu-text-block .menu-explain{font-size:10px; margin-bottom:0; padding:0 10px;}
+/*お気に入り*/
+.fav-list-table .fav-item-part{width:43%;}
+/*テーブル*/
+.table.table-list-style{border-bottom:solid 1px #dddddd;}
+.table-list-style > tbody > tr > th{padding:10px; width:28%;}
+.table-list-style > tbody > tr > td{padding:10px; vertical-align:middle;}
+.table-list-style .radio.inline,
+.table-list-style .checkbox.inline{padding-bottom:5px;}
+.table-list-style select{margin-bottom:0;}
+
+/*==================
+cart
+==================*/
+.table-bordered tbody th{width:28%;}
+table td.item-part{width:50%;}
+table td.itemprice-part{width:16%; text-align:center; vertical-align:middle;}
+table td.quantity-part{width:16%; text-align:center; vertical-align:middle;}
+table td.total-itemprice-part{width:16%; text-align:center; vertical-align:middle;}
+table td.total-gift-part{width:20%; text-align:center; vertical-align:middle;}
+
+/*インデックス
+----------------------------*/
+/*合計金額部*/
+.total-price-part{overflow:hidden;}
+.total-price-part p{float:right; border:solid 3px #dddddd; margin:0; padding: 10px 7px; width:280px; text-align:center;}
+.total-price-part p span{font-size:14px; font-weight:bold; margin-left:10px;}
+
+/*商品情報用テーブル*/
+table .item-table td{border:none; background-color:transparent !important;}
+table .item-table td p{margin-bottom:0;}
+
+/*確認画面
+----------------------------*/
+/*ポイント入力部*/
+.point-form{padding:10px 16px; border:solid 1px #dddddd; margin-bottom:20px;}
+.point-form table th{text-align:left; font-weight:normal;}
+.point-form table td{font-weight:bold; padding-left:20px;}
+.point-form .use-point-form{margin-top:10px;}
+.point-form .use-point-form span{display:inline-block; font-weight:bold; margin-right:20px;}
+.point-form .use-point-form .btn.btn-primary{margin-right:10px;}
+
+/*合計金額テーブル（購入履歴詳細ページ兼用）*/
+table.confirm-price-box{width:50%; margin-left:auto;}
+table.confirm-price-box th{width:45%;}
+table.confirm-price-box td{text-align:right;}
+
+/*商品投入ポップアップ
+----------------------------*/
+#cartWindow{width:650px; background:#FFFFFF; border:solid 4px #e9e5e2; box-shadow: #999 0 1px 10px; padding:0 10px; height:500px; position:fixed; top:10%; opacity:0; left:30%; z-index:36500; display:none;}
+#grayAction{position:fixed; top:0; left:0; height:100%; width:100%; z-index:0; background:#fff; opacity:0.6; filter:alpha(opacity=60); display:none;}
+.recomendLeft{clear:both; border-right:solid 1px #e9e5e2; float:left; padding:0 10px 0 0; width:150px; height:500px; overflow:hidden;}
+.recomendLeftTtl{margin:10px 0 5px; font-weight:bold; text-align:center; font-size:12px;}
+.cartRight{float:right; padding:0; background:#fff; width:470px;}
+.closedBatch{position:absolute; top:2px; right:5px; font-size:20px;}
+.cartInNumber{padding:20px 0; text-align:center;}
+.cartInNumber span{color:#F00;}
+.cartProductArea{height:280px; overflow-x:auto;}
+.cartProductArea table td{padding:10px 0; border-bottom:solid 1px #e9e5e2; vertical-align:top;}
+.cartProductArea table td.price{width:30%; text-align:center; vertical-align:middle;}
+.cartProductArea table td img{width:100px;}
+.cartProductArea table td p{margin:0;}
+.cartProductArea table td p.numUnder{margin-top:10px;}
+.viewBtnParts{margin-top:10px;}
+.viewBtnParts p{text-align:right; margin:20px 0 10px; font-size:14px; font-weight:bold;}
+.viewBtnParts ul{margin-top:20px;}
+.viewBtnParts ul li{text-align:right;}
+.viewBtnParts ul li.actClose{margin-top:10px;}
+.closedBatch,
+.actClose{cursor:pointer;}
+.cartProductArea p a:hover{text-decoration:underline;}
+
+/*後払い処理中
+----------------------------*/
+#white_elem{height:100%; width:100%; position:fixed; top:0; left:0; background-color:#fff; opacity:0.5; z-index:9999;}
+#inner_elem{width:280px; position:fixed; top:50%; left:50%; background-color:#fff; border:solid 1px #aaa; border-radius:5px; margin-top:-150px; margin-left:-150px; box-shadow:0 3px 7px #aaa; z-index:10000;}
+#msg{text-align:center; margin:30px 0 0;}
+#meter{height:16px; width:16px; margin:10px auto 30px; background-image:url('../images/loader.gif'); background-repeat:no-repeat;}
+
+/*複数配送
+----------------------------*/
+/*カート内*/
+.each-multi-setting{margin-bottom:40px; padding:15px; border:solid 1px #f5f5f5; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);}
+.each-multi-setting .table{background-color:#ffffff;}
+table td.giftwrapping-part{vertical-align:middle; text-align:center;}
+table td.quantity-part .subtotal{width:60%;}
+#optional_services{overflow:hidden; margin-bottom:20px;}
+#optional_services .noshi_prev{float:right; margin-left:10px;}
+#optional_services .preview-image-box{float:left; width:50%;}
+#optional_services .preview-image-btns{margin-top:10px; text-align:center;}
+#optional_services .preview-image-btns .btn{margin:0 5px;}
+.card-setting-images {}
+/*マイページ内*/
+.create-image img {width:48%;}
+.create-image .create-error{color:#999999; margin-bottom:0;}
+/*熨斗設定*/
+.giftOptionSettingContentBody input[type="radio"]{
+  margin:0;
+}
+p.left span{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;  
+  display:inline-block;
+  margin-left:20px;
+  width:30%;
+}
+p.right span{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;  
+  display:inline-block;
+  margin-left:20px;
+  width:30%;
+}
+.giftsetting_foot_block{
+  padding:0 8px;
+}
+.giftsetting_foot_block .attention{
+  margin:0;
+  text-align:left;
+}
+.set-up-noshi{
+  padding:20px;
+  display:block;
+  margin-bottom:28px;
+	text-align:center;
+}
+.set-up-noshi:hover{
+  text-decoration:none;
+}
+.noshi-line-one label{
+  display:inline-block;
+}
+.noshi_preview_block .preview_image{
+	text-align:center;
+}
+.noshi_preview_block .attention{
+  margin:15px 0;
+}
+.noshi_preview_block .btn_foot{
+  padding:10px;
+  text-align:center;
+}
+.noshi_preview_main .btn_foot .btn-primary{
+  text-decoration:none;
+  padding:6px 10%;
+  margin-right:10px;
+}
+.noshi_preview_block .btn_foot .btn-primary:hover{
+  text-decoration:none;
+}
+.noshi_preview_block .btn_foot form{
+  display:inline;
+}
+.noshi_preview_block .attention{
+  font-size:11px;
+  color:#c00;
+  margin-bottom:10px;
+}
+.noshi_preview_main .noshi_preview_block .btn_foot > .btn_back > .btn {
+    padding: 6px 90px;
+}
+.giftOptionSettingContentBody {
+	text-align:center;
+}
+.giftOptionSettingContentBody .radio_noshi{
+	float:left;
+	width:30%;
+}
+.giftOptionSettingContentBody .giftSetting_title{
+	padding-top:200px;
+}
+.giftOptionSettingContentBody .btn{
+	padding:6px 60px;
+}
+.noshi_preview_main .messagesError,
+.noshi_preview_block .messagesError{
+	text-align:center;
+	padding-top:150px;
+	color:#F7090D;
+}
+.noshi_preview_main .messagesError ul li,
+.noshi_preview_block .messagesError ul li{
+	list-style:none;
+}
+
+/*熨斗設定モバイル*/
+.mobile-noshi-set input[type="radio"]{
+  margin:0;
+}
+p.left span{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;  
+  display:inline-block;
+  margin-left:20px;
+  width:30%;
+}
+p.right span{
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;  
+  display:inline-block;
+  margin-left:20px;
+  width:30%;
+}
+.set-up-noshi{
+  padding:20px;
+  display:block;
+  margin-bottom:28px;
+}
+.set-up-noshi:hover{
+  text-decoration:none;
+}
+.noshi-line-one label{
+  display:inline-block;
+}
+.mobile-noshi-set .attention,
+.submit-block .attention,
+.noshi_preview_block .attention{
+  font-size:11px;
+  color:#c00;
+  margin-bottom:10px;
+}
+.btn_foot .btn{
+margin-top:10px;
+}
+.btn_foot form{
+  display:inline-block;
+}
+.mobile-noshi-set .radio_noshi{
+	float:left;
+	width:30%;
+}
+/*メッセージカード設定*/
+.btn_foot .btn{
+margin-top:10px;
+}
+.btn_foot form{
+  display:inline-block;
+}
+.mcard-title{
+  font-size:14px;
+}
+.select_table_row .last_child textarea{
+  padding:0;
+}
+.select_table_row .preview_image{
+  margin:20px;
+  text-align:center;
+}
+.select_table_row .preview-title{
+  text-align:center;
+}
+.select_table_row .preview-title input{
+  margin:0;
+}
+.set-up-card{
+  padding:20px 0;
+  display:block;
+  margin-bottom:28px;
+  margin-top:14px;
+  text-align:center;
+}
+.set-up-card:hover{
+  text-decoration:none;
+}
+.giftsetting_foot_block .attention,
+.noshi_preview_block .attention{
+  font-size:11px;
+  color:#c00;
+  margin-bottom:10px;
+}
+.giftsetting_foot_block p .btn{
+  margin-top:15px;
+}
+.giftOptionSettingContentBody .giftsetting_foot_block{
+  padding:0;
+  text-align:left;
+}
+.giftOptionSettingContentBody .select_table_row .preview_image{
+  margin:20px;
+  text-align:center;
+}
+.giftOptionSettingContentBody .preview-title{
+  text-align:center;
+}
+#TB_ajaxContent{
+	text-align:center;
+}
+.set-up-card{
+  padding:20px 0;
+  display:block;
+  margin-bottom:28px;
+  margin-top:14px;
+  text-align:center;
+}
+.set-up-card:hover{
+  text-decoration:none;
+}
+.mcard_preview_block .preview_image{
+	text-align:center;
+}
+.mcard_preview_block .btn_foot{
+  text-align:center;
+}
+.noshi_preview_block .btn-foot{
+	text-align:center;
+}
+.noshi_preview_main .mcard_preview_block .btn_foot > .btn_back > .btn {
+    padding: 6px 90px;
+}
+.giftOptionSettingContentBody{
+	text-align:center;
+}
+/*==================
+affix
+==================*/
+.affix-base{position:relative;}
+.affix{top:15px;}
+.affix-bottom{position:absolute; top:auto; bottom:0;}
+
+/*==================
+register
+==================*/
+.register-legal-area{margin-top:50px;}
+.register-legal-area .form-actions{text-align:center;}
+.register-legal-area .form-actions .btn-primary{float:none; margin-top:20px;}
+.register-legal-area .legal{overflow-x:auto; height:300px;}
+
+/*==================
+noshi
+==================*/
+#lean_overlay{
+  position: fixed; z-index:100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+.modal_close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: block; 
+  width: 14px;
+  height: 14px; 
+  background: url(../images/modal_close.png);
+  z-index: 2;
+}

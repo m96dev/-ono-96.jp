@@ -1,0 +1,84 @@
+@charset "utf-8";
+div#contents_main{
+	padding: 3%;
+}
+div.yeartop{
+border-top: solid 15px #c52231;
+}
+div#contents_main div.infomation{
+	background-color: #c52231;
+	margin-bottom: 5%;
+}
+div#contents_main h3{
+	padding-top: 4%;
+}
+div#contents_main .readText{
+	color: #ffffff;
+	font-size: large;
+	line-height: 150%;
+	font-weight: 400;
+	padding: 2% 0;
+}
+div#contents_main .att{
+	color: #ffffff;
+	padding-bottom: 2%;
+}
+div#contents_main .row-fluid a{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: large;
+	display: block;
+}
+div#contents_main .row-fluid{
+	padding: 0  0 2% 0;
+}
+div#contents_main .btnset{
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 3%;
+}
+div#contents_main .btnset .span6{
+	border: solid 3px #ffffff;
+	padding: 3% 5%;
+}
+
+
+
+
+/* ここからSMP*/
+
+@media screen and (max-width: 700px) {
+div#contents_main h3{
+	padding: 5% 3% 3%;
+}
+
+div#contents_main .row-fluid a{
+	margin: 2%;
+	width: 90%;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: large;
+	display: block;
+	}
+div#contents_main .row-fluid .span6{
+	border: solid 3px #ffffff;
+	padding: 3%;
+	margin: 2% 0;
+}
+div#contents_main .btnset{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+div.yeartop {
+    border-top: 15px solid #c52231;
+}
+
+
+
+
+
+
+
+

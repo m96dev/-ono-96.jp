@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* RESET
+--------------------------------------------------------------*/
+div, span,
+dl, dt, dd, ol, ul, li {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+	line-height:1.5;
+	font-family:Verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,sans-serif;
+}
+
+ul {
+    list-style:none;
+}
+
+img {
+	vertical-align:bottom;
+}
+
+
+.clear_fix {
+	clear: both;
+}
+
+.clear{clear: both;}
+.clearfix:after {
+  content: ""; 
+  display: block; 
+  clear: both;
+}
+.clear hr{
+	display:none;
+} 
+
+#imgHover {
+	width: 888px;
+	height:814px;
+}
+.thumbnail img {
+	width: 65px;
+	height: 85px;
+}
+#imgHover #imgFrame {
+	position: absolute;
+	margin-left: 288px;
+}
+#imgHover #imgFrame img{
+	width:600px;
+}
+#imgHover #imgHoverList {
+	list-style: none;
+	position: relative;
+	float: left;
+	width: 288px;
+}
+#imgHover ul li {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 4px;
+}
+#imgHover ul li img {
+	border: none;
+	padding-bottom: 5px;
+}
+#imgHover ul li a {
+	display: block;
+}
+#imgHover ul li a:hover {
+	position: static;
+}
+#imgHover ul li a .mainimg-color {
+	display: none;
+}
+#imgHover ul li a .mainimg-detail {
+	display: none;
+}
+#imgHover ul li a .mainimg-detail img{
+	width:600px;
+}
+#imgHover ul li a:hover .mainimg-color {
+	display: block;
+	position: absolute;
+	top: -53px;
+	left: 288px;
+}
+#imgHover ul li a:hover .mainimg-detail {
+	display: block;
+	position: absolute;
+	top: -216px;
+	left: 288px;
+}
+.thumbnail-title {
+	margin-bottom: 14px;
+	font-size: 12px;
+}
+.thumbnail-title img {
+	margin-bottom: 7px;
+}
+
+.spec-all {
+width:666px;
+color: #454545;
+font-family: ヒラギノ角ゴ ProN W3,Meiryo,メイリオ,sans-serif,Lucida Grande,Hiragino Kaku Gothic ProN;
+font-size: 10px;
+}
+.spec-all table {
+border-collapse: collapse;
+width:666px;
+}
+.spec-all th.t_top {
+    border-top: #be1309 4px solid;
+}
+.spec-all th {
+border-bottom: #e3e3e3 1px dotted;
+text-align: center;
+padding: 10px;
+font-weight: normal;
+}
+.spec-all tr {
+font-size:12px;
+}
+.spec-all td.t_top {
+border-top: #b3b3b3 4px solid;
+}
+.spec-all td {
+border-bottom: #e3e3e3 1px dotted;
+text-align:center;
+padding: 10px;
+}
+.explain {
+	width:666px;
+}
