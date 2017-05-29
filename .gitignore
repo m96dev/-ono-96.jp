@@ -3,6 +3,7 @@
 
 # add white list ,folder & files
 !/.gitignore
+!/deploy.php
 
 !/index.html
 
