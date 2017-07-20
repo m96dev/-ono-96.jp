@@ -37,8 +37,8 @@ function initialize() {
  
  
   var image = {
-    url : 'http://mono-96.jp/ishida/mono96/images/map.png',
-    scaledSize : new google.maps.Size(35, 42)
+    url : 'http://mono-96.jp/images/map.png',
+    scaledSize : new google.maps.Size(50, 75)
   } 
 	
  
