@@ -37,7 +37,10 @@ function initialize() {
  
  
   var image = {
-    url : 'http://mono-96.jp/images/map.png',
+
+//    url : 'http://mono-96.jp/images/map.png',
+    url : 'http://mono-96.jp/images/map_icon.gif',
+
     scaledSize : new google.maps.Size(50, 75)
   } 
 	
@@ -46,7 +49,8 @@ function initialize() {
       position: brooklyn,
       map: map,
       icon:image, 
-      title: 'MONO96map'
+      title: 'MONO96map',
+    optimized:false        
   });
  
    
