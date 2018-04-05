@@ -1,0 +1,487 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************************************************/
+/*All*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+section{
+    padding: 14% 0 8%;
+}
+
+section#company{
+    padding: 5% 0 10%;
+}
+
+section h2{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section h2 img{
+    width: 550px;
+    max-width: 95%;
+}
+
+section h3{
+    width: 90%;
+    margin: 4% auto;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+section h3 span{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+}
+
+
+
+/******************************************************************/
+/*Humberger Pagetop*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+#nav-drawer {
+    position: fixed;
+    z-index: 10;
+    top: 2%;
+    right: 2%;
+}
+
+.nav-unshown {
+    display:none;
+}
+
+#nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+    background: #fff;
+    padding: 14px 10px 10px 14px;
+    opacity: 0.8;
+    z-index: 9999;
+}
+
+#nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #000;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+#nav-open span:before {
+    bottom: -8px;
+}
+#nav-open span:after {
+    bottom: -16px;
+}
+
+#nav-close {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    z-index: 999;
+    width: 50%;
+    height: auto;
+    background: #fff;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-155%);
+    transform: translateX(-155%);
+}
+
+#nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: 0.5;
+}
+
+#nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    /*transform: skewX(45deg);*/
+}
+
+ul#menu_sp,
+#nav-input:checked ~ #nav-content ul#menu_sp{
+    width: 100%;
+    background: #fff;
+}
+
+ul#menu_sp li,
+#nav-input:checked ~ #nav-content ul#menu_sp li {
+    padding: 10% 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+}
+
+ul#menu_sp li,
+#nav-input:checked ~ #nav-content ul#menu_sp li.nav_ttl {
+    padding: 10% 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+ul#menu_sp li:nth-child(2n),
+#nav-input:checked ~ #nav-content ul#menu_sp li:nth-child(2n) {
+    background: #eee;
+}
+
+ul#menu_sp li img,
+#nav-input:checked ~ #nav-content ul#menu_sp li img{
+    width: 70%;
+}
+
+}
+
+@media screen and (min-width: 700px){
+    #nav-drawer{display: none;}
+}
+
+
+
+/******************************************************************/
+/*Header*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+header .main_vs{
+    height: 50vh;
+}
+
+header .main_vs img.mv{
+    height: 50vh;
+    margin: 0 -50%;
+}
+
+header .main_vs div figure{
+    top: -webkit-calc(50% - 32%);
+    top: calc(50% - 32%);
+}
+
+header .main_vs div figure img.main_logo_top{
+    width: 70%;
+}
+
+header .main_vs div figure img.main_logo{
+    width: 75%;
+}
+
+header nav_sp{
+    position: fixed;
+    z-index: 10;
+}
+
+}
+
+
+
+/******************************************************************/
+/*News*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+section#news p img{
+    width: 80%;
+    right: 50%;
+    margin-right: -39%;
+}
+
+section#news ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#news ul li{
+    width: 80%;
+    margin: 0 0 8%;
+}
+
+section#news ul li img{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+section#news ul li span.date{
+    top: 6%;
+    left: 5%;
+}
+
+section#news ul li span.caption{
+    width: 93%;
+    height: auto;
+    padding: 2% 4%;
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 1.0;
+    text-align: left;
+}
+
+}
+
+
+/******************************************************************/
+/*Service + Works*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+section#service ul.service_all li{
+    width: 85%;
+    margin: 4% auto;
+    text-align: center;
+}
+
+section#service ul.service_all li img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+section#service ul.service_all li span.caption{
+    width: 100%;
+    padding: 2%;
+}
+
+section#service .works_btn{
+    width: 90%;
+    min-width: 90%;
+    margin: 4% auto 0;
+    padding : 20px 2%;
+    font-size: 14px;
+}
+
+section#service .works_btn:after{
+    margin-left: 2%;
+}
+
+#works_container section#works{
+    padding-top: 100px;
+    display: block;
+}
+
+section#works a.works_btn{
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    display: block;
+    margin: 5% auto 0;
+    padding : 20px 2%;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+section#works a.works_btn:after{
+    margin-left: 2%;
+}
+
+section#works a.works_btn:hover:after {
+	margin-left: 2%;
+}
+
+section#works ul.works_all{
+    width: 90%;
+    padding: 5% 5% 0;
+}
+
+section#works ul.works_all li{
+    width: 100%;
+    height: auto;
+    margin: 0 auto 6%;
+}
+
+#works_container section#works ul.works_all li{
+    width: 90%;
+    height: auto;
+}
+
+section#works ul.works_all li img.client_img{
+    width: 100%;
+    height: auto;
+}
+
+#works_container section#works ul.works_all li img.client_img{
+    width: 100%;
+    height: auto;
+}
+
+section#works ul.works_all li button.client_btn{
+    display: block;
+}
+
+section#works ul.works_all li button.client_btn:after{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+section#works ul.works_all li h4 p{
+    margin: 23% auto;
+}
+
+}
+
+
+
+/******************************************************************/
+/*Company*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+section#company table{
+    width: 100%;
+    margin: 8% auto;
+    padding: 0;
+    text-align: center;
+}
+
+section#company table th{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 0 1%;
+    font-size: 14px;
+}
+
+section#company table td{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 5%;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+section#company table td:before{
+    padding: 0;
+    content: "";
+    font-weight: bold;
+}
+
+}
+
+
+
+/******************************************************************/
+/*Contact*/
+/******************************************************************/
+
+@media screen and (max-width: 699px){
+
+section#contact #mono_form{
+    width: 100%;
+    margin: 5% auto 5%;
+    font-size: 12px;
+    padding: 0;
+}
+
+section#contact #mono_form div.contact_box{
+    width: 90%;
+    margin: 0 auto 25px;
+    font-size: 12px;
+    padding: 0;
+    text-align: left;
+}
+
+section#contact #mono_form div.contact_box label{
+    display: inline-block;
+    width: 90%;
+    height: 17px;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px 5% 12px;
+    text-align: left;
+    background: #333;
+    color: #fff;
+}
+
+section#contact #mono_form div.contact_box label.label_03{
+    height: 17px;
+}
+
+section#contact #mono_form div.contact_box label span{
+    display: inline-block;
+    padding: 5px 0 0 10px;
+    font-size: 10px;
+}
+
+section#contact #mono_form div.contact_box input,
+section#contact #mono_form div.contact_box textarea{
+    display: inline-block;
+    width: 90%;
+    height: 45px;
+    margin: 0 auto -6px;
+    font-size: 14px;
+    padding: 5%;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    border: none;
+    vertical-align: top;
+}
+
+section#contact #mono_form div.contact_box textarea{
+    height: 145px;
+    vertical-align: top;
+    resize: none;
+}
+
+section#contact #mono_form button{
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    display: block;
+    margin: 8% auto 0;
+    padding : 20px 2%;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+section#contact #mono_form button:hover{
+    background :#a9ff4c;
+}
+
+section#contact #mono_form button:after{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 3%;
+}
+
+}

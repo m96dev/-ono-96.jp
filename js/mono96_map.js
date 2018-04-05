@@ -39,7 +39,7 @@ function initialize() {
   var image = {
 
 //    url : 'http://mono-96.jp/images/map.png',
-    url : 'http://mono-96.jp/images/map_icon.gif',
+    url : 'http://mono-96.jp/img/map_icon.gif',
 
     scaledSize : new google.maps.Size(50, 75)
   } 
